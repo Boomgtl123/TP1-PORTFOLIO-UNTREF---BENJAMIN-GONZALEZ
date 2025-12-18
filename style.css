@@ -1,0 +1,193 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #000000 0%, #000000 100%);
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    object-fit: cover;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.header-photo img:hover {
+    border-color: #3474dc;
+    transform: scale(1.05);
+}
+
+.header-text {
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.intro {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.details {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.bio, .skills, .experience, .education {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1;
+    min-width: 300px;
+}
+
+.bio:hover, .skills:hover, .experience:hover, .education:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.bio h2, .skills h2, .experience h2, .education h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.bio p {
+    color: #555;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skills li {
+    background-color: #3498db;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    flex: 1 1 calc(50% - 0.5rem);
+    min-width: 150px;
+}
+
+.skills li:hover {
+    background-color: #2980b9;
+}
+
+.experience, .education {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.experience .job, .education .degree {
+    background-color: #ecf0f1;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.experience h3, .education h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.experience p, .education p {
+    font-weight: bold;
+    color: #34495e;
+    margin-bottom: 0.5rem;
+}
+
+.experience ul, .education ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    color: #555;
+}
+
+
+
+footer {
+    background-color: #0f1010;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+.social-icons {
+    margin: 1rem 0;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #3498db;
+}
+
+footer p {
+    margin: 0.5rem 0 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+}
